@@ -1,0 +1,26 @@
+$accent: #EF7F1A;
+$light:#D9C896;
+$dark:#3c2c21;
+$medium:#EF8D3C;
+$brown:#805a40;
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+%roboto-700{
+  font-family: 'RobotoCondensed-Bold', sans-serif;
+  font-weight: 700;
+}
+%roboto-400{
+  font-family: 'RobotoCondensed-Regular', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+%roboto-300{
+  font-family: 'RobotoCondensed-Ligth', sans-serif;
+  font-weight: 300;
+}

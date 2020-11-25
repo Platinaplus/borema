@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>BoReMa</title>
+
+  <link rel="stylesheet" href="css/style.min.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js" defer></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js" defer></script> -->
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        
+        <a class="header__logo">
+          <img src="images/logo1.png" alt="logo" class="header__logo-img">
+        </a>
+        
+        <nav class="header__menu">
+          <li class="header__menu-item"><a href="#about" class="header__menu-link">О нас</a></li>
+          <li class="header__menu-item"><a href="#catalog" class="header__menu-link">Каталог</a></li>
+          <li class="header__menu-item"><a href="#delivery" class="header__menu-link">Доставка</a></li>
+          <li class="header__menu-item"><a href="#payment" class="header__menu-link">Оплата</a></li>
+          <li class="header__menu-item"><a href="#header" class="header__menu-link">Главная</a></li>
+          <li class="header__menu-item"><a href="#contacts" class="header__menu-link">Контакты</a></li>
+        </nav>
+
+        
+
+        <div class="header__contacts">
+          <div class="header__contacts-tel"><a href="tel:+79051234567">+7 (905) 123 45 67</a></div>
+          <button class="header__contacts-btn">Заказать звонок</button>
+        </div>
+        <nav class="header__menu-side">
+          <li class="header__menu-side-item"><a href="#about" class="header__menu-side-link">О нас</a></li>
+          <li class="header__menu-side-item"><a href="#catalog" class="header__menu-side-link">Каталог</a></li>
+          <li class="header__menu-side-item"><a href="#delivery" class="header__menu-side-link">Доставка</a></li>
+          <li class="header__menu-side-item"><a href="#payment" class="header__menu-side-link">Оплата</a></li>
+          <li class="header__menu-side-item"><a href="#header" class="header__menu-side-link">Главная</a></li>
+          <li class="header__menu-side-item"><a href="#contacts" class="header__menu-side-link">Контакты</a></li>
+        </nav>
+        <button class="header__menu-btn"></button>
+      </div>
+    </div>
+  </header>
+<main class="main">
+
+  <section class="content">
+    <div class="container">
+      <div class="content__inner">
+        <h1 class="content__title">
+          Кованые ножи ручной работы
+          от производителя
+        </h1>
+        <div class="content__image">
+          <img src="images/header.png" alt="Ковка ножа" class="content__image--img">
+        </div>
+        <div class="content__advantages">
+          <ul class="content__advantages-list">
+            <li class="content__advantages-list--item">Не является холодным оружием, сертификация по ГОСТ Р 51644-2000</li>
+            <li class="content__advantages-list--item">Бритвенная заточка лезвия. Можно вскрывать консервы, разделывать
+              туши, нарезать филе и резать даже проволоку.</li>
+            <li class="content__advantages-list--item">Оплата при получении. Предоставляем кассовый чек после оплаты.</li>
+            <li class="content__advantages-list--item">Гарантия 10 лет на производственный брак и сервисное обслуживание
+              после покупки.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="description" id="about">
+    <div class="container">
+      <h2 class="description__title" id="test">
+        Ножи БОРЕМА выбрали уже более 9500 клиентов!
+      </h2>
+      <div class="description__inner">
+        <ul class="description__list">
+          <li class="description__item">
+            <p class="description__text">
+              Ваш нож будет держать заточку до 2х раз дольше.
+              <span>100% соблюдение технологии закалки стали обеспечивает высокую твердость лезвия вашего ножа.</span>
+            </p>
+          </li>
+          <li class="description__item">
+            <p class="description__text">
+              Ваш нож сделают мастера с опытом работы более 15 лет.
+              <span>Руками наших мастеров собранно уже более 200 000 ножей!!!</span>
+            </p>
+          </li>
+          <li class="description__item">
+            <p class="description__text">
+              Ваш нож будет сделан только из лучших марок сталей отечественного и немецкого производства.
+              <span>Обеспечиваем контроль качества стали и литья на всех этапах работы.</span>
+            </p>
+          </li>
+          <li class="description__item">
+            <p class="description__text">
+              В руке ваш нож будет лежать как влитой.
+              <span>Рукояти наших ножей делаем только из ценных пород дерева.</span>
+            </p>
+          </li>
+        </ul>
+        <div class="description__photos">
+          <img src="images/item1.jpg" class="description__photo"></img>
+          <img src="images/item3.jpg" class="description__photo"></img>
+          <img src="images/item4.png" class="description__photo"></img>
+        </div>
+      </div>
+      <button class="description__discount">
+        Узнайте какой нож подходит именно вам со скидкой 2177 рублей
+      </button>
+
+    </div>
+  </section>
+
+  <section class="hits">
+    <div class="container">
+      <h2 class="hits__title">Выбирайте лучшее предложение прямо сейчас</h2>
+      <div class="hits__inner">
+        <div class="hits__inner-items">
+          <div class="hits__inner-item">
+            <div class="hits__inner-item--name"><a href="#">Якутский нож Дамасск</a></div>
+            <img class="hits__inner-item--img" src="images/hit4.jpg" alt="нож">
+            <div class="hits__descr">
+              Клинок: сталь дамасcк
+              <span>Рукоять: стабилизированное дерево</span>
+            </div>
+            <div class="hits__inner-item--price">Специальная цена <span class="active">9477</span> руб. <span
+                class="old-price">11700</span> руб.</div>
+            <div class="hits__inner-item--quantity">В наличии <span class="count"> 3</span> штуки</div>
+            <button class="hits__btn">Купить</button>
+            <div class="hits__inner-item--quantity">Уже купили <span class="count">68</span> ножей</div>
+            <button class="hits__link">Подробнее</button>
+          </div>
+          <div class="hits__inner-item">
+            <div class="hits__inner-item--name"><a href="#">Охотничий шведский нож Stog</a></div>
+            <img class="hits__inner-item--img" src="images/hit1.jpg" alt="шведский нож">
+            <div class="hits__descr">
+              Клинок: сталь D2
+              <span>Рукоять: стабилизированное дерево</span>
+            </div>
+            <div class="hits__inner-item--price">Специальная цена <span class="active">6377 руб</span>. <span
+                class="old-price">8500</span> руб.</div>
+            <div class="hits__inner-item--quantity">В наличии <span class="count">5</span> штук</div>
+            <button class="hits__btn">Купить</button>
+            <div class="hits__inner-item--quantity">Уже купили <span class="count">108</span> ножей</div>
+            <button class="hits__link">Подробнее</button>
+          </div>
+          <div class="hits__inner-item">
+            <div class="hits__inner-item--name"><a href="#">Финка НКВД сталь Х12МФ</a></div>
+            <img class="hits__inner-item--img" src="images/finka.jpg" alt="нож">
+            <div class="hits__descr">
+              Клинок: сталь Х12МФ
+              <span>Рукоять: стабилизированное дерево</span>
+            </div>
+            <div class="hits__inner-item--price">Специальная цена <span class="active">5387 руб</span>. <span
+                class="old-price">6700</span> руб.</div>
+            <div class="hits__inner-item--quantity">В наличии <span class="count2">9</span> штук</div>
+            <button class="hits__btn">Купить</button>
+            <div class="hits__inner-item--quantity">Уже купили <span class="count2">342</span> ножа</div>
+            <button class="hits__link">Подробнее</button>
+          </div>
+          <div class="hits__inner-item">
+            <div class="hits__inner-item--name"><a href="#">Охотничий нож Лесной</a></div>
+            <img class="hits__inner-item--img" src="images/hit2.jpg" alt="нож">
+            <div class="hits__descr">
+              Клинок: медицинская сталь 50Х12 мф
+              <span>Рукоять: американский орех</span>
+            </div>
+            <div class="hits__inner-item--price">Специальная цена <span class="active">2977</span> руб. <span
+                class="old-price">4600</span> руб.</div>
+            <div class="hits__inner-item--quantity">В наличии <span class="count2">11</span> штук</div>
+            <button class="hits__btn">Купить</button>
+            <div class="hits__inner-item--quantity">Уже купили <span class="count2">226</span> ножей</div>
+            <button class="hits__link">Подробнее</button>
+          </div>
+
+        </div>
+      </div>
+      <button class="hits__discount">
+        Узнай как вернуть до 20% от стоимости покупки
+      </button>
+    </div>
+  </section>
+
+  <section class="video">
+<div class=container>
+      <h2 class="video__title">Наши мастера вкладывают свою душу в каждый нож</h2>
+      <div class="video__video">
+        <a data-fancybox href="https://youtu.be/bmjdqoVvazQ" class="video__link">
+          <img class="video__button" src="images/play-button.png" alt="Смотреть">
+        </a>
+      </div>
+</div>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <div class="container">
+      <div class="catalog__inner">
+        <h2 class="catalog__title">Каталог</h2>
+        <div class="catalog__inner-items">
+
+
+          <div class="catalog__item" style="background-image: url('images/catalog-2.jpg')" alt="нож">
+            <div class="catalog__theme">
+              Скандинавские ножи: финский, шведский, норвежский
+            </div>
+            <button class="catalog__btn">Выбрать</button>
+          </div>
+
+          <div class="catalog__item" style="background-image: url('images/catalog-1.jpg')" alt="нож">
+            <div class="catalog__theme">
+              Финка НКВД 1935 г. и Нож разведчика НР40
+            </div>
+            <button class="btn catalog__btn">Выбрать</button>
+          </div>
+
+          <div class="catalog__item" style="background-image: url('images/catalog-4.jpg')" alt="нож">
+            <div class="catalog__theme">
+              Ножи для дела:
+              охота, рыбалка и туризм
+            </div>
+            <button class="catalog__btn">Выбрать</button>
+          </div>
+
+          <div class="catalog__item" style="background-image: url('images/catalog-5.jpg')" alt="нож">
+            <div class="catalog__theme">
+              Ножи для вашей кухни: кухонные ножи и тяпки
+            </div>
+            <button class="catalog__btn">Выбрать</button>
+          </div>
+
+          <div class="catalog__item" style="background-image: url('images/catalog-3.jpg')" alt="нож">
+            <div class="catalog__theme">
+              Ножи народов севера:
+              якутский, алеутский и ненецкий
+            </div>
+            <button class="catalog__btn">Выбрать</button>
+          </div>
+
+          <form class="catalog__form" id="form1"action="#">
+            <div class="form__text">
+              Получить бесплатную консультацию
+            </div>
+            <input class="catalog__input" requared type="text" name="name" id="name" placeholder="Ваше имя">
+            <input class="catalog__input" requared type="tel" name="phone" id="phone" placeholder="+7----------">
+            <button  class="btn catalog__btn" id="button1" type="submit" disabled >Подобрать нож</button>
+            <div class="form__text--small">
+              Нажимая на кнопку вы даете свое
+              согласие на обработку персональных
+              данных
+            </div>
+          </form>
+          <div class="answer answer-catalog">Мы свяжемся с вами!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="delivery" id="delivery">
+    <div class="container">
+      <div class="delivery__title">
+        Отправляем заказ в течение суток. Бесплатная доставка
+      </div>
+      <div class="delivery__items">
+
+        <p class="delivery__item text1">
+          Доставка до пункта выдачи через СДЕК и Почту России: По предоплате 350 руб. Наложенным платежом от 450 руб.
+          Экспресс-доставка до адреса через курьерские компании: по предоплате от 500 руб. Наложенным платежом от 600
+          руб.
+
+        </p>
+        <p class="delivery__item text2">
+          Доставка бесплатная при сумме заказа более 8500 руб. Срок доставки заказа от 2 до 15 дней в зависимости от
+          региона
+
+        </p>
+        <p class="delivery__item text6">
+          Не понравился нож? Не вовремя доставили? Менеджер вовремя не ответил? Мы вернем 100 % стоимости.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="payment" id="payment">
+    <div class="container">
+      <div class="payment__title">Гарантия и безопасная оплата</div>
+      <div class="payment__items">
+        <p class="payment__item text3">
+          Оплату можно произвести через сервис защищённых платежей банковской картой, с электронного кошелька, систему
+          ApllePay или GooglePay.​ Возможно оплатить на расчётный счёт.
+        </p>
+        <p class="payment__item text4">
+          После оплаты вы получаете электронный чек на ваш e-mail, согласно 54-ФЗ РФ.
+        </p>
+        <div class="payment__item">
+          <a class="payment__link" href="images/sertificate1.pdf" data-fancybox="images" data-caption="Сертификат">
+          <img class="payment__img" src="images/sertificate.png" alt="сертификат" />
+        </a>
+          <p class="payment__item text5">
+            В комплектацию заказа входит нож, ножны из кожи, сертификат, гарантийный талон и маслёнка.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback">
+    <div class="container">
+      <h2 class="feedback__title">Отзывы</h2>
+      <div class="feedback__items">
+        <div class="feedback__item"></div>
+        <div class="feedback__item"></div>
+        <div class="feedback__item"></div>
+        <div class="feedback__item"></div>
+        <div class="feedback__item"></div>
+        <div class="feedback__item"></div>
+        <div class="feedback__item"></div>
+        <div class="feedback__item"></div>
+        <div class="feedback__item"></div>
+        <div class="feedback__item"></div>
+        <div class="feedback__item"></div>
+        <div class="feedback__item"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <ul class="contacts__list">
+          <li class="contacts__links">
+            <a class="contacts__links--link" href="#">Наши контакты</a>
+            <a class="contacts__links--tel" href="tel:88001131234"> 8 800 113 12 34</a>
+          </li>
+          <li class="contacts__links">
+            <a class="contacts__links--link" href="#">Адрес</a>
+            <p class="contacts__list--text">г. Богородск, ул. Богородская, д.1</p>
+          </li>
+          <li class="contacts__links">
+            <a class="contacts__links--link" href="#">Реквизиты</a>
+            <p class="contacts__list--text">ООО "Ножи и топоры" ИНН 523457890 </p>
+          </li>
+          <li class="contacts__links">
+            <a class="contacts__links--link" href="#">Подробнее о нас</a>
+            <p class="contacts__list--text"></p>
+          </li>
+        </ul>
+        <form class="catalog__form" id="form2" action="#">
+          <input class="catalog__input" requared type="text" name="name" placeholder="Ваше имя">
+          <input class="catalog__input" requared type="tel" name="phone" placeholder="+7----------">
+          <button class="btn catalog__btn" id="button2" disabled>Подобрать нож</button>
+          <div class="form__text--small">
+            Нажимая на кнопку вы даете свое
+            согласие на обработку персональных
+            данных
+          </div>
+        </form>
+        <div class="answer answer-contacts">Мы свяжемся с вами!</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__name">&copy;2020 Борема</p>
+      <img class="footer__img" src="images/logo.png" alt="логотип">
+      <a href="#header" class="footer__link">Наверх &#8679;</a>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <form class="modal__form" id="form3" action="#">
+          <div data-close class="modal__close">&times;</div>
+          <div class="modal__title">Получить бесплатную консультацию</div>
+          <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+          <input required placeholder="+7----------" name="phone" type="phone" class="modal__input">
+          <button type="submit" class="btn modal__btn " id="button3" disabled>Подобрать нож</button>
+        </form>
+        <div class="answer answer-modal">
+          <span>Мы свяжемся с вами!</span>
+          <div data-close class="modal__close">&times;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.min.js"></script>
+  <script src='js/jquery.spincrement.min.js'></script>
+
+</body>
+
+</html>
