@@ -56,7 +56,7 @@ img {
 }
 
 body {
-@extend %roboto-400;
+    @extend %roboto-400;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -102,9 +102,9 @@ body {
 }
 
 .header {
-    background-image: url('../images/bg.png');
+    background-image: url('../images/bg.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     padding-top: 20px;
 
     &__logo-img {
@@ -240,7 +240,7 @@ body {
 }
 
 .content {
-    background-image: url('../images/bg.png');
+    background-image: url('../images/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -387,9 +387,9 @@ body {
 }
 
 .hits {
-    background-image: url('../images/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../images/bg.jpg');
+    // background-repeat: no-repeat;
+    background-size: contain;
     padding: 20px 0 40px;
 
     &__title {
@@ -556,9 +556,9 @@ body {
 }
 
 .catalog {
-    background-image: url('../images/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../images/bg.jpg');
+    // background-repeat: no-repeat;
+    background-size: contain;
     padding-bottom: 75px;
 
     &__title {
@@ -813,7 +813,7 @@ body {
 }
 
 .feedback {
-    background-image: url('../images/bg.png');
+    background-image: url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;

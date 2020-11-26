@@ -32,9 +32,7 @@
           <li class="header__menu-item"><a href="#header" class="header__menu-link">Главная</a></li>
           <li class="header__menu-item"><a href="#contacts" class="header__menu-link">Контакты</a></li>
         </nav>
-
-        
-
+      
         <div class="header__contacts">
           <div class="header__contacts-tel"><a href="tel:+79051234567">+7 (905) 123 45 67</a></div>
           <button class="header__contacts-btn">Заказать звонок</button>
@@ -51,7 +49,7 @@
       </div>
     </div>
   </header>
-<main class="main">
+
 
   <section class="content">
     <div class="container">
@@ -369,7 +367,24 @@
       </div>
     </div>
   </section>
-</main>
+
+<div class="modal">
+  <div class="modal__dialog">
+    <div class="modal__content">
+      <form class="modal__form" id="form3" action="#">
+        <div data-close class="modal__close">&times;</div>
+        <div class="modal__title">Получить бесплатную консультацию</div>
+        <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+        <input required placeholder="+7----------" name="phone" type="phone" class="modal__input">
+        <button type="submit" class="btn modal__btn " id="button3" disabled>Подобрать нож</button>
+      </form>
+      <div class="answer answer-modal">
+        <span>Мы свяжемся с вами!</span>
+        <div data-close class="modal__close">&times;</div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <footer class="footer">
     <div class="container footer__container">
@@ -379,23 +394,7 @@
     </div>
   </footer>
 
-  <div class="modal">
-    <div class="modal__dialog">
-      <div class="modal__content">
-        <form class="modal__form" id="form3" action="#">
-          <div data-close class="modal__close">&times;</div>
-          <div class="modal__title">Получить бесплатную консультацию</div>
-          <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
-          <input required placeholder="+7----------" name="phone" type="phone" class="modal__input">
-          <button type="submit" class="btn modal__btn " id="button3" disabled>Подобрать нож</button>
-        </form>
-        <div class="answer answer-modal">
-          <span>Мы свяжемся с вами!</span>
-          <div data-close class="modal__close">&times;</div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
   <script src="js/main.min.js"></script>
   <script src='js/jquery.spincrement.min.js'></script>
