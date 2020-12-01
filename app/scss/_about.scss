@@ -1,0 +1,18 @@
+.about{
+  @extend %roboto-400;
+  &__title{
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: $light;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  &__photos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 69px;
+  }
+}
