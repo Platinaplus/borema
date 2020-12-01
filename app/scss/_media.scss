@@ -282,7 +282,7 @@
     }
   }
 }
-@media (max-width: 440px){
+@media (max-width: 540px){
   .header{
     &__inner{
       display: block;
@@ -388,7 +388,7 @@
       padding: 30px 0;
     }
     &__item{
-      width: 250px;
+      width: 80%;
       height: 300px;
     }
     &__theme{

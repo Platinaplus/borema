@@ -2,7 +2,7 @@
 @import 'fonts';
 @import 'libs';
 @import 'vars';
-
+@import 'about';
 
 html {
     box-sizing: border-box;
@@ -56,7 +56,7 @@ img {
 }
 
 body {
-@extend %roboto-400;
+    @extend %roboto-400;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -102,9 +102,8 @@ body {
 }
 
 .header {
-    background-image: url('../images/bg.png');
+    background-image: url('../images/bg.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     padding-top: 20px;
 
     &__logo-img {
@@ -208,7 +207,7 @@ body {
     }
 
     &__contacts {
-        text-align: left;
+        text-align: center;
     }
 
     &__contacts-tel {
@@ -218,13 +217,15 @@ body {
     }
 
     &__contacts-btn {
-        height: 70px;
+        height: 50px;
         border-radius: 20px;
-        font-size: 28px;
+        font-size: 20px;
         line-height: 42px;
         padding: 0 15px;
         border: 1px solid #fff;
+        background-color: rgba(202, 192, 192, .5);
         box-shadow: 2px 8px 6px rgba(0, 0, 0, 0.5);
+        color: $dark;
         transition: all .5s;
 
         &:hover {
@@ -240,7 +241,7 @@ body {
 }
 
 .content {
-    background-image: url('../images/bg.png');
+    background-image: url('../images/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -338,13 +339,14 @@ body {
 
     &__text {
         position: relative;
+        padding-left: 40px;
 
         &::before {
             content: '\2714';
             font-size: 36px;
             position: absolute;
-            top: -10px;
-            left: -22px;
+            top: 6px;
+            left: 0;
         }
     }
 
@@ -353,13 +355,14 @@ body {
         flex-direction: column;
         justify-content: space-between;
         margin-left: 30px;
+        row-gap: 20px;
     }
 
     &__photo {
-        width: 300px;
-        height: 200px;
         object-fit: cover;
         display: block;
+        border-radius: 4px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
     }
 
     &__discount {
@@ -387,9 +390,9 @@ body {
 }
 
 .hits {
-    background-image: url('../images/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../images/bg.jpg');
+    // background-repeat: no-repeat;
+    background-size: contain;
     padding: 20px 0 40px;
 
     &__title {
@@ -556,9 +559,9 @@ body {
 }
 
 .catalog {
-    background-image: url('../images/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../images/bg.jpg');
+    // background-repeat: no-repeat;
+    background-size: contain;
     padding-bottom: 75px;
 
     &__title {
@@ -813,7 +816,7 @@ body {
 }
 
 .feedback {
-    background-image: url('../images/bg.png');
+    background-image: url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
