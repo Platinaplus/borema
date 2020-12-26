@@ -134,13 +134,14 @@ $(function () {
       $(this).scrollTop() > $(".header").outerHeight()
     );
   });
+ 
 
   //ADAPTIVE MENU VISIBLE-------------------------------------------------------------------
 
   $(".header__menu-btn, .header__menu-link, .header__menu-side-link").on('click', ()=> {
     $(".header__menu-side").toggleClass('show')
     $(".header__menu-btn").toggleClass('close')
-  })
+  });
 
   //MODAL WINDOW OPEN---------------------------------------------------------------------
 

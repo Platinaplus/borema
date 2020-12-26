@@ -1,31 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BoReMa about</title>
   <link rel="stylesheet" href="css/style.min.css" />
-  <!-- <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js" defer></script>
-  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js" defer></script> -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js" defer></script>
 </head>
 
 <body>
   <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
-
-
-
-        <nav class="header__menu">
-          <li class="header__menu-item"><a href="#about" class="header__menu-link">Главная</a></li>
+        <nav class="header__menu about__menu">
+          <li class="header__menu-item"><a href="index.html" class="header__menu-link">Главная</a></li>
           <li class="header__menu-item"><a href="#catalog" class="header__menu-link">Каталог</a></li>
         </nav>
-
         <a class="header__logo">
           <img src="images/logo1.png" alt="logo" class="header__logo-img">
         </a>
-
         <div class="header__contacts">
           <div class="header__contacts-tel"><a href="tel:+79051234567">+7 (905) 123 45 67</a></div>
           <button class="header__contacts-btn">Заказать звонок</button>
@@ -35,17 +30,18 @@
   </header>
   <main class="main">
     <section class="about">
-      <div class="container">
-        <div class="about__top">
+      <div class="about__top">
+        <div class="container">
           <div class="about__title">Подробнее о нас</div>
           <p class="about__text">
             Богородск - старинный город в Нижегородской области.
-            Такие небольшие и старинные городишки и формируют облик исторический облик и душу России.
+            Такие небольшие и старинные городишки и формируют исторический облик и душу России.
           </p>
           <p class="about__text">
             Бытует версия, что город основали опальные жители Великого Новгорода.
             Иван Грозный, разгромив этот город в 1570 году, часть его жителей казнил, а часть выслал в другие места
-            Московского государства. Группа новгородцев до 300 человек попала в Нижегородское Березополье и обосновалась на
+            Московского государства. Группа новгородцев до 300 человек попала в Нижегородское Березополье и обосновалась
+            на
             проезжей дороге между Нижним Новгородом и Муромом, в 40 верстах от первого.
             Так и возник город Богородск. Благодаря этому город и славен своими мастерами.
           </p>
@@ -55,10 +51,124 @@
             <img src="images/bogorodsk3.jpg" alt="Богородск" class="about__photo">
           </div>
         </div>
-        <div class="about__center">
-
+      </div>
+      <div class="about__center">
+        <div class="container">
+          <div class="about__center-title">
+            Богородская Ремесленная Мануфактура –
+            это творческий и производственный союз мастеров своего дела.
+            Принято думать, что кованные ножи делает кузнец в кузнице.
+            На самом деле в производстве ножей участвует не один мастер.
+          </div>
+          <div class="about__center-inner">
+            <ul class="about__center-left">
+              <li class="about__center-item">
+                Кузнец куёт
+                металлические заготовки для ножей.
+              </li>
+              <li class="about__center-item">
+                Мастер по металлообработке
+                делает клинки и собирает ножи
+              </li>
+            </ul>
+            <div class="logo">
+              <img src="images/logo1.png" alt="лого" class="about__logo">
+            </div>
+            <ul class="about__center-left">
+              <li class="about__center-item">
+                Мастер кожевенник шьёт индивидуальные
+                ножны из бычьей кожи для ножей.
+              </li>
+              <li class="about__center-item">
+                Мастер краснодеревщик изготавливает
+                рукояти из ценных пород дерева
+                и доводит нож до финальной красоты.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <div class="about__masters">
+        <div class="container">
+          <h2 class="about__masters-title">
+            Знакомьтесь с теми людьми,
+            которые делают для вас ножи ручной работы:
+          </h2>
+          <div class="about__masters-inner">
+            <div class="about__master">
+              <img src="images/photo1.jpg" alt="фото мастера" class="about__master-img">
+              <div class="about__master-name">Александр</div>
+              <p class="about__master-text">Кузнец-удалец со стажем 11 лет</p>
+            </div>
+            <div class="about__master">
+              <img src="images/photo1.jpg" alt="фото мастера" class="about__master-img">
+              <div class="about__master-name">Алексей</div>
+              <p class="about__master-text">Фееричный мастер по металлу, творит чудеса из металла уже больше 15 лет</p>
+            </div>
+            <div class="about__master">
+              <img src="images/photo1.jpg" alt="фото мастера" class="about__master-img">
+              <div class="about__master-name">Макар</div>
+              <div class="about__master-text">Мастер с большой буквы, шьёт из кожи бесподобные вещи уже более 25 лет
+              </div>
+            </div>
+            <div class="about__master">
+              <img src="images/photo1.jpg" alt="фото мастера" class="about__master-img">
+              <div class="about__master-name">Василий Петрович</div>
+              <div class="about__master-text">Мастер золотые руки, в его руках дерево превращается в шедевр вот уже
+                более 20 лет.</div>
+            </div>
+            <div class="about__master">
+              <img src="images/photo1.jpg" alt="фото мастера" class="about__master-img">
+              <div class="about__master-name">Сергей</div>
+              <div class="about__master-text">Мотор нашей мануфактуры,
+                отличный организатор, благодаря ему мы работаем как слаженная команда.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__bottom">
+        <div class="container">
+          <div class="about__bottom-title">
+            <p>
+              Ножи БОРЕМА от ковки клинка до финишной сборки
+              готового изделия делают наши мастера.
+            </p>
+            <p>
+              Покупая нож в нашей мануфактуре вы получаете изделие полностью сделанное руками опытных мастеров, с
+              высоким
+              стандартом производства и с 100 % гарантией качества.
+            </p>
+          </div>
+          <div class="about__bottom-inner">
+            <img src="images/about1.jpg" alt="ковка ножа" class="about__bottom-img">
+            <img src="images/about2.jpg" alt="ковка ножа" class="about__bottom-img">
+            <img src="images/about3.jpg" alt="ковка ножа" class="about__bottom-img">
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35594.34078076762!2d43.47783456465753!3d56.111337904601804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414e3430b7911ad7%3A0xe4a78806f3655c66!2z0JHQvtCz0L7RgNC-0LTRgdC6LCDQndC40LbQtdCz0L7RgNC-0LTRgdC60LDRjyDQvtCx0Lsu!5e0!3m2!1sru!2sru!4v1608985613189!5m2!1sru!2sru"
+              frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="contacts">
+                <div class="contacts__inner">
+                  <ul class="contacts__list">
+                    <li class="contacts__links">
+                      <a class="contacts__links--link" href="#">Наши контакты</a>
+                      <a class="contacts__links--tel" href="tel:88001131234"> 8 800 113 12 34</a>
+                    </li>
+                    <li class="contacts__links">
+                      <a class="contacts__links--link" href="#">Адрес</a>
+                      <p class="contacts__list--text">г. Богородск, ул. Богородская, д.1</p>
+                    </li>
+                    <li class="contacts__links">
+                      <a class="contacts__links--link" href="#">Реквизиты</a>
+                      <p class="contacts__list--text">ООО "Ножи и топоры" ИНН 523457890 </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
     </section>
   </main>
   <footer class="footer">
@@ -68,6 +178,7 @@
       <a href="#header" class="footer__link">Наверх &#8679;</a>
     </div>
   </footer>
+  <!-- <script src="js/main.min.js"></script> -->
 </body>
 
 </html>
