@@ -695,7 +695,7 @@ body {
 
 .delivery,
 .payment {
-    padding: 50px 0 54px;
+    padding: 60px 0 54px;
     background-color: $dark;
 
     &__title {
@@ -894,6 +894,28 @@ body {
         letter-spacing: 1px;
 
     }
+    &__name{
+        color:#000;
+        font-weight: bold;
+        display: block;
+    }
+    &__city,
+    &__prof{
+        margin-bottom: 15px;
+    }
+    &__city{
+        display: block;
+        margin-bottom: 15px;
+    }
+    &__body{
+        margin-top: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        letter-spacing: 1px;
+        
+    }
+
+
 }
 
 .slick-dots {
