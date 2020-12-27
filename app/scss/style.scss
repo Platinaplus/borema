@@ -560,9 +560,9 @@ body {
 
 .catalog {
     background-image: url('../images/bg.jpg');
-    // background-repeat: no-repeat;
     background-size: contain;
     padding-bottom: 75px;
+    padding-top: 50px;
 
     &__title {
         font-size: 36px;
@@ -696,7 +696,7 @@ body {
 
 .delivery,
 .payment {
-    padding: 37px 0 54px;
+    padding: 60px 0 54px;
     background-color: $dark;
 
     &__title {
@@ -835,18 +835,61 @@ body {
         height: 460px;
         border: 20px solid $dark;
         position: relative;
-
+        padding:20px;
+        text-align: left;
+        overflow: auto;
         &::before {
             content: "";
             background-image: url('../images/clip.png');
             background-size: contain;
             background-repeat: no-repeat;
-            width: 60px;
-            height: 70px;
+            width: 40px;
+            height: 50px;
             position: absolute;
-            top: -20px;
+            top: 15px;
+        }
+
+    }
+    &__avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto 30px;
+        object-fit: cover;
+    }
+    &__social{
+        display: inline;
+        
+        svg{
+            width: 30px;
+            height: 30px;
+            transform: translateY(7px);
         }
     }
+    &__name{
+        color:#000;
+        font-weight: bold;
+        display: block;
+    }
+    &__city,
+    &__prof{
+        margin-bottom: 15px;
+    }
+    &__city{
+        display: block;
+        margin-bottom: 15px;
+    }
+    &__body{
+        margin-top: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        letter-spacing: 1px;
+        
+    }
+
+
 }
 
 .slick-dots {
