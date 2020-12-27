@@ -31,6 +31,18 @@
   .text6 {
     padding: 40px 10px;
   }
+
+  .about {
+    &__photo{
+      max-width: 30%;
+    }
+    &__center-item{
+      max-width: 350px;
+    }
+    &__bottom-img{
+      max-width: 30%;
+    }
+  }
 }
 
 
@@ -237,6 +249,26 @@
   .contacts{
     & .catalog__form{
       width: 300px;
+    }
+  }
+  .about{
+    &__center{
+      padding: 40px 0;
+    }
+    &__center-inner{
+      display: block;
+    }
+    &__center-item{
+      margin: 0 auto;
+      max-width: 500px;
+    }
+    &__logo{
+      margin: 0 auto;
+    }
+    &__masters-title{
+      
+      font-size: 20px;
+
     }
   }
 }

@@ -124,7 +124,7 @@ $(function () {
 
   $(".header__menu-link, .header__menu-side-link").on("click", (e) => {
     e.preventDefault();
-    $(".header__menu, .header__menu-side").removeClass("active");
+    $(".header__menu-link, .header__menu-side").removeClass("active");
     $(e.target).addClass("active");
   });
 
@@ -244,7 +244,7 @@ $(function () {
       }
     });
   }
-  countup("count", 4000);
+  countup("count", 5000);
   countup("count2", 7000);
 
 });
