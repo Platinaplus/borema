@@ -15,7 +15,7 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
 </head>
 
-<body>
+<body data-title="main">
   <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
@@ -211,14 +211,14 @@
             <div class="catalog__theme">
               Скандинавские ножи: финский, шведский, норвежский
             </div>
-            <button class="catalog__btn">Выбрать</button>
+            <a href="catalog.html" class="catalog__btn">Выбрать</a>
           </div>
 
           <div class="catalog__item" style="background-image: url('images/catalog-1.jpg')" alt="нож">
             <div class="catalog__theme">
               Финка НКВД 1935 г. и Нож разведчика НР40
             </div>
-            <button class="catalog__btn">Выбрать</button>
+            <a href="catalog.html" class="catalog__btn">Выбрать</a>
           </div>
 
           <div class="catalog__item" style="background-image: url('images/catalog-4.jpg')" alt="нож">
@@ -226,14 +226,14 @@
               Ножи для дела:
               охота, рыбалка и туризм
             </div>
-            <button class="catalog__btn">Выбрать</button>
+            <a href="catalog.html" class="catalog__btn">Выбрать</a>
           </div>
 
           <div class="catalog__item" style="background-image: url('images/catalog-5.jpg')" alt="нож">
             <div class="catalog__theme">
               Ножи для вашей кухни: кухонные ножи и тяпки
             </div>
-            <button class="catalog__btn">Выбрать</button>
+            <a href="catalog.html" class="catalog__btn">Выбрать</a>
           </div>
 
           <div class="catalog__item" style="background-image: url('images/catalog-3.jpg')" alt="нож">
@@ -241,7 +241,7 @@
               Ножи народов севера:
               якутский, алеутский и ненецкий
             </div>
-            <button class="catalog__btn">Выбрать</button>
+            <a href="catalog.html" class="catalog__btn">Выбрать</a>
           </div>
 
           <form class="catalog__form" id="form1" action="#">
@@ -250,7 +250,7 @@
             </div>
             <input class="catalog__input" requared type="text" name="name" id="name" placeholder="Ваше имя">
             <input class="catalog__input" requared type="tel" name="phone" id="phone" placeholder="+7----------">
-            <button class="btn catalog__btn" id="button1" type="submit" disabled>Подобрать нож</button>
+            <a class="btn catalog__btn" id="button1" type="submit" disabled>Подобрать нож</a>
             <div class="form__text--small">
               Нажимая на кнопку вы даете свое
               согласие на обработку персональных
@@ -637,6 +637,7 @@
   </footer>
 
   <script src="js/main.min.js"></script>
+  <script src="js/fb.js"></script>
   <script src='js/jquery.spincrement.min.js'></script>
 
 </body>

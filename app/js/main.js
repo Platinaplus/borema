@@ -15,11 +15,11 @@
     // var bigOne = document.getElementById('test');
     // var dbRef = firebase.database().ref().child('test');
     // dbRef.on('value', snap => bigOne.innerText = snap.val());
-
+  
     firebase.initializeApp(firebaseConfig);
     // firebase.analytics();
     let database = firebase.database();
-
+  
     const btnCatalog = document.getElementById("button1");
     const btnContacts = document.getElementById("button2");
     const btnModal = document.getElementById("button3");
@@ -30,12 +30,11 @@
     const answerContacts = document.querySelector(".answer-contacts");
     const answerModal = document.querySelector(".answer-modal");
     const modalWidow = document.querySelector(".modal");
-
+  
     const saveToFirebase = (form, answer) => {
       const name = form.querySelector('input[name = "name"]').value.trim();
       const phone = form.querySelector('input[name = "phone"]').value.trim();
-      let customerId =
-        Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000;
+      let customerId = Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000;
       if ((name, phone)) {
         writeCustomerData(customerId, name, phone);
         handler(form, answer);
@@ -45,7 +44,7 @@
         return;
       }
     };
-
+  
     function writeCustomerData(id, name, contact) {
       firebase
         .database()
@@ -55,7 +54,7 @@
           phone: contact,
         });
     }
-
+  
     const handler = (form, answer) => {
       form.style.display = "none";
       form.reset();
@@ -72,19 +71,23 @@
         }
       }, 2000);
     };
-
-    btnCatalog.addEventListener("click", (e) => {
-      e.preventDefault();
-      saveToFirebase(formCatalog, answerCatalog);
-    });
-    btnContacts.addEventListener("click", (e) => {
-      e.preventDefault();
-      saveToFirebase(formContacts, answerContacts);
-    });
+    if (btnCatalog){
+      btnCatalog.addEventListener("click", (e) => {
+        e.preventDefault();
+        saveToFirebase(formCatalog, answerCatalog);
+      });
+    }
+    if(btnContacts){
+      btnContacts.addEventListener("click", (e) => {
+        e.preventDefault();
+        saveToFirebase(formContacts, answerContacts);
+      });
+    }
     btnModal.addEventListener("click", (e) => {
       e.preventDefault();
       saveToFirebase(formModal, answerModal);
     });
+
 
     //SLIDER-------------------------------------------------------------------------
 
@@ -113,31 +116,34 @@
     });
 
     //SMOOTH SCROLL--------------------------------------------------------------------
-
-    $(".header__menu a, .footer a, .header__menu-side a").on(
-      "click",
-      function (e) {
-        e.preventDefault();
-        const id = $(this).attr("href"),
-          top = $(id).offset().top;
-        $("body,html").animate({ scrollTop: top }, 1500);
-      }
-    );
+    if($("body").data("title") === "main") {
+      $(".header__menu a, .footer a, .header__menu-side a").on(
+        "click",
+        function (e) {
+          e.preventDefault();
+          const id = $(this).attr("href"),
+            top = $(id).offset().top;
+          $("body,html").animate({ scrollTop: top }, 1500);
+        }
+      );
+    }
 
     //FIXED HEADER------------------------------------------------------------------------
+    if($("body").data("title") === "main") {
 
-    $(".header__menu-link, .header__menu-side-link").on("click", (e) => {
-      e.preventDefault();
-      $(".header__menu-link, .header__menu-side").removeClass("active");
-      $(e.target).addClass("active");
-    });
-
-    $(window).scroll(function () {
-      $(".header__menu, .header__menu-side").toggleClass(
-        "scroll",
-        $(this).scrollTop() > $(".header").outerHeight()
-      );
-    });
+      $(".header__menu-link, .header__menu-side-link").on("click", (e) => {
+        e.preventDefault();
+        $(".header__menu-link, .header__menu-side").removeClass("active");
+        $(e.target).addClass("active");
+      });
+  
+      $(window).scroll(function () {
+        $(".header__menu, .header__menu-side").toggleClass(
+          "scroll",
+          $(this).scrollTop() > $(".header").outerHeight()
+        );
+      });
+    }
 
     //ADAPTIVE MENU VISIBLE-------------------------------------------------------------------
 
@@ -250,7 +256,9 @@
         }
       });
     }
-    countup("count", 5000);
-    countup("count2", 7000);
+    if($("body").data("title") === "main"){
+      countup("count", 5000);
+      countup("count2", 7000);
+    }
   });
 })(window.jQuery);

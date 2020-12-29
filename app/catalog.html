@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BoReMa catalog</title>
   <link rel="stylesheet" href="css/style.min.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js" defer></script>
 </head>
 
-<body>
+<body data-title="catalog">
   <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
@@ -17,7 +19,7 @@
           <img src="images/logo1.png" alt="logo" class="header__logo-img">
         </a>
 
-        <nav class="header__menu">
+        <nav class="header__menu shop__menu">
           <li class="header__menu-item"><a href="about.html" class="header__menu-link">О нас</a></li>
           <li class="header__menu-item"><a href="index.html" class="header__menu-link">Главная</a></li>
         </nav>
@@ -48,7 +50,9 @@
           </h3>
           <div class="shop__cards">
             <div class="card">
-              <img class="card__img" src="images/shop/img1.jpg" alt="нож">
+              <a href="images/shop/img1.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img1.jpg" alt="нож">
+              </a>
               <div class="card__name">
                 Название ножа
                 <span class="card__material">
@@ -71,7 +75,465 @@
               </table>
               <div class="card__inner">
                 <span class="card__price">5 950 руб</span>
-                <button class="btn card__btn">Купить</button>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img2.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img2.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img3.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img3.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img4.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img4.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop__category">
+          <h3 class="shop__category-title">
+            Ножи для дела:
+              охота, рыбалка и туризм
+          </h3>
+          <div class="shop__cards">
+            <div class="card">
+              <a href="images/shop/img1.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img1.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img2.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img2.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img3.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img3.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img4.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img4.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop__category">
+          <h3 class="shop__category-title">
+            Ножи народов севера:
+              якутский, алеутский и ненецкий
+          </h3>
+          <div class="shop__cards">
+            <div class="card">
+              <a href="images/shop/img1.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img1.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img2.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img2.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img3.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img3.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img4.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img4.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop__category">
+          <h3 class="shop__category-title">
+            Ножи для вашей кухни: кухонные ножи и тяпки
+          </h3>
+          <div class="shop__cards">
+            <div class="card">
+              <a href="images/shop/img1.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img1.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img2.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img2.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img3.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img3.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <a href="images/shop/img4.jpg" class="card__link" data-fancybox="images" data-caption="нож">
+                <img class="card__img" src="images/shop/img4.jpg" alt="нож">
+              </a>
+              <div class="card__name">
+                Название ножа
+                <span class="card__material">
+                  (из чего изготовлен)
+                </span>
+              </div>
+              <table class="card__descr">
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Длина клинка</td>
+                  <td class="card__descr-num">140 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Толщина обуха</td>
+                  <td class="card__descr-num"> 2.4 мм</td>
+                </tr>
+                <tr class="card__descr-item">
+                  <td class="card__descr-name">Ширина клинка</td>
+                  <td class="card__descr-num">25 мм</td>
+                </tr>
+              </table>
+              <div class="card__inner">
+                <span class="card__price">5 950 руб</span>
+                <button class="card__btn">Купить</button>
               </div>
             </div>
           </div>
@@ -79,6 +541,32 @@
       </div>
     </div>
   </section>
+
+  <div class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <form class="modal__form" id="form3" action="#">
+          <div data-close class="modal__close">&times;</div>
+          <div class="modal__title">Получить бесплатную консультацию</div>
+          <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+          <input required placeholder="+7----------" name="phone" type="phone" class="modal__input">
+          <button type="submit" class="btn modal__btn " id="button3" disabled>Подобрать нож</button>
+        </form>
+        <div class="answer answer-modal">
+          <span>Мы свяжемся с вами!</span>
+          <div data-close class="modal__close">&times;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__name">&copy;2020 Борема</p>
+      <img class="footer__img" src="images/logo.png" alt="логотип">
+      <a href="#header" class="footer__link">Наверх &#8679;</a>
+    </div>
+  </footer>
 
   <script src="js/main.min.js"></script>
 </body>

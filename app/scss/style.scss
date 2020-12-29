@@ -617,27 +617,7 @@ body {
     }
 
     &__btn {
-        min-width: 200px;
-        height: 40px;
-        padding: 0 15px;
-        background: linear-gradient(180deg, #8C592B 0%, #D9C896 100%);
-        border: 1px solid #8C592B;
-        border-radius: 30px;
-        font-size: 21px;
-        line-height: 40px;
-        color: #000;
-        z-index: 2;
-        box-shadow: 8px 4px 8px 0px rgba(7, 8, 9, 0.2);
-        transition: all, .3s;
-
-        &:hover,
-        &:active {
-            color: $accent;
-        }
-
-        &:active {
-            box-shadow: 8px 4px 8px 0px rgba(7, 8, 9, 0.2) inset;
-        }
+        @extend %btn;
     }
 
     &__form {

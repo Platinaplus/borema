@@ -10,13 +10,13 @@
   <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js" defer></script>
 </head>
 
-<body>
+<body data-title="about">
   <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
         <nav class="header__menu about__menu">
           <li class="header__menu-item"><a href="index.html" class="header__menu-link">Главная</a></li>
-          <li class="header__menu-item"><a href="#catalog" class="header__menu-link">Каталог</a></li>
+          <li class="header__menu-item"><a href="catalog.html" class="header__menu-link">Каталог</a></li>
         </nav>
         <a class="header__logo">
           <img src="images/logo1.png" alt="logo" class="header__logo-img">
@@ -170,6 +170,23 @@
         </div>
     </section>
   </main>
+  <div class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <form class="modal__form" id="form3" action="#">
+          <div data-close class="modal__close">&times;</div>
+          <div class="modal__title">Получить бесплатную консультацию</div>
+          <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+          <input required placeholder="+7----------" name="phone" type="phone" class="modal__input">
+          <button type="submit" class="btn modal__btn " id="button3" disabled>Подобрать нож</button>
+        </form>
+        <div class="answer answer-modal">
+          <span>Мы свяжемся с вами!</span>
+          <div data-close class="modal__close">&times;</div>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="footer">
     <div class="container footer__container">
       <p class="footer__name">&copy;2020 Борема</p>
@@ -177,7 +194,7 @@
       <a href="#header" class="footer__link">Наверх &#8679;</a>
     </div>
   </footer>
-  <!-- <script src="js/main.min.js"></script> -->
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

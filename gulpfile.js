@@ -70,7 +70,7 @@ function watching() {
   // возможность галпа следить
   watch(["app/scss/**/*.scss"], styles);
   watch(["app/js/**/*.js", "!app/js/main.min.js"], scripts);
-  watch(["add/**/*.html"]).on("change", browserSync.reload);
+  watch(["app/**/*.html"]).on("change", browserSync.reload);
 }
 
 exports.styles = styles;
