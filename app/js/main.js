@@ -157,7 +157,7 @@
 
     //MODAL WINDOW OPEN---------------------------------------------------------------------
 
-    $(".header__contacts-btn, .description__discount, .hits__discount").on(
+    $(".header__contacts-btn, .description__discount, .hits__discount, .card__btn").on(
       "click",
       (e) => {
         e.preventDefault();
