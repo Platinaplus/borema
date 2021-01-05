@@ -51,7 +51,7 @@
 
 @media (max-width: 1035px) {
   .container {
-    max-width: 700px;
+    max-width: 900px;
   }
 
   .header {
@@ -90,6 +90,10 @@
       &.show {
         transform: translateY(0);
       }
+    }
+
+    &__contacts{
+      align-self:center;
     }
 
     &__contacts-btn {
@@ -141,10 +145,6 @@
       margin-bottom: 75px;
       padding-top: 0;
     }
-
-    &__text {
-      padding-left: 20px;
-
       &::before {
         left: -5px;
       }
@@ -214,8 +214,9 @@
   }
 
   .catalog {
+    padding-top: 0;
     &__inner-items {
-      justify-content: center;
+      justify-content: space-around;
     }
   }
 
@@ -284,8 +285,9 @@
 
   .feedback {
     &__item {
-      width: 80% !important;
-      height: 300px;
+      width: 100% !important;
+      height: 400px;
+      overflow: auto;
     }
   }
 
@@ -374,7 +376,7 @@
       text-align: left;
     }
   }
-}
+
 
 @media (max-width: 640px) {
   .header {
@@ -411,8 +413,6 @@
 
   .description {
     &__text {
-      padding-left: 30px;
-
       &::before {
         left: 8px;
       }
@@ -546,6 +546,13 @@
       font-size: 20px;
     }
 
+    &__list{
+      font-size: 18px;
+      span {
+        font-size: 14px;
+      }
+    }
+
     &__inner {
       display: block;
       position: relative;
@@ -562,6 +569,7 @@
     &__discount {
       font-weight: bold;
       max-width: 300px;
+      margin-top: 0;
     }
   }
 
@@ -584,6 +592,9 @@
       .active {
         font-size: 20px;
       }
+      .old-price{
+        display: block;
+      }
     }
 
     &__link {
@@ -596,12 +607,14 @@
     }
 
     &__discount {
+      font-size: 13px;
+    }
+    &__descr{
       font-size: 14px;
-      width: auto;
-      height: 55px;
-      padding: 0;
     }
   }
+
+  
 
   .video {
     &__title {
@@ -619,6 +632,7 @@
   }
 
   .catalog {
+    padding: 0 0 10px;
     &__title {
       font-size: 24px;
       padding: 30px 0;
@@ -716,7 +730,7 @@
   }
 
   .modal__content {
-    padding: 40px 0;
+    padding: 40px 20px;
   }
 
   .modal__title {

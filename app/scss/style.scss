@@ -340,7 +340,7 @@ body {
 
     &__text {
         position: relative;
-        padding-left: 40px;
+        padding-left: 50px;
 
         &::before {
             content: '\2714';
@@ -507,16 +507,8 @@ body {
     }
 
     &__discount {
-        width: 350px;
-        height: 87px;
-        border: 1px solid #8C592B;
-        border-radius: 30px;
-        font-size: 21px;
-        line-height: 28px;
-        padding: 15px 29px;
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-        transition: all .5s;
-
+        @extend %btn;
+        padding: 15px;
         &:hover {
             background-color: $light;
             color: #000;
@@ -611,9 +603,7 @@ body {
         margin-bottom: 40px;
         padding: 0 15px;
         z-index: 2;
-        // background-color: #fff;
         color: #fff;
-        // background: linear-gradient(180deg, #8C592B 0%, #D9C896 100%);
     }
 
     &__btn {

@@ -157,11 +157,18 @@
 
     //MODAL WINDOW OPEN---------------------------------------------------------------------
 
-    $(".header__contacts-btn, .description__discount, .hits__discount, .card__btn").on(
+    $(".header__contacts-btn, .description__discount, .hits__btn, .hits__discount, .card__btn").on(
       "click",
       (e) => {
         e.preventDefault();
-        $(".modal").addClass("visible");
+        if((e.target).className == 'card__btn' || (e.target).className == 'hits__btn') {
+          $('.modal__title').text('Сделать заказ')
+          $(".modal").addClass("visible");
+        } else {
+          $('.modal__title').text('Получить бесплатную консультацию')
+          $(".modal").addClass("visible");
+        }
+
       }
     );
 
